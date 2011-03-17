@@ -1,0 +1,6 @@
+; $Id$
+
+name = Giftoflife donate
+description = Enables simple donate via Onlindengi payment system
+core = 6.x
+version = "6.x-1.x-dev"

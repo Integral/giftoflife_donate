@@ -1,0 +1,643 @@
+ <?php
+// $Id$
+
+// Copyright 2010 Daniel A. Beilinson
+
+function giftoflife_donate_countries() {
+  return array(
+	'RUS' => 'Russia',
+	'USA' => 'USA',
+	'POL' => 'Poland',
+	'ESP' => 'Spain',
+	'BGR' => 'Bulgaria',
+	'ARG' => 'Argentina',
+	'AUS' => 'Australia',
+	'JPN' => 'Japan',
+	'DEU' => 'Germany',
+	'AUT' => 'Austria',
+	'UKR' => 'Ukrain',
+	'CAN' => 'Canada',
+	'UZB' => 'Uzbekistan',
+	'GEO' => 'Georgia',
+	'ISR' => 'Izrail',
+	'KAZ' => 'Kazahstan',
+	'KGZ' => 'Kyrgyzstan',
+	'CHN' => 'China',
+	'AZE' => 'Azerbaijan',
+	'CZE' => 'Czech Republic',
+	'GBR' => 'Great Britain',
+	'ITA' => 'Italy',
+	'FRA' => 'France',
+	'CHE' => 'Switzerland',
+	'LVA' => 'Latvia',
+	'EST' => 'Estonia',
+	'DNK' => 'Denmark',
+	'NOR' => 'Norway',
+	'SWE' => 'Sweden',
+	'HUN' => 'Hungary',
+	'CUB' => 'Cuba',
+	'PRT' => 'Portugal',
+	'YUG' => 'Yugoslavia',
+	'ROM' => 'Rumania',
+	'HKG' => 'Hong Cong',
+	'NZL' => 'New Zealand',
+	'BLR' => 'Belarus',
+	'MEX' => 'Mexico',
+	'IRL' => 'Irland',
+	'ALB' => 'Albania',
+	'DZA' => 'Algeria',
+	'ASM' => 'Samoa American',
+	'AGO' => 'Angola',
+	'AND' => 'Andorra',
+	'ATG' => 'Antigua',
+	'ARM' => 'Armenia',
+	'ABW' => 'Aruba',
+	'BHS' => 'Bahamian isl.',
+	'BGD' => 'Bangladesh',
+	'BRB' => 'Barbados',
+	'BHR' => 'Bahrain',
+	'BLZ' => 'Belize',
+	'BEL' => 'Belgium',
+	'BEN' => 'Benin',
+	'BMU' => 'Bermudas',
+	'BOL' => 'Blivia',
+	'BIH' => 'Bosnia and Herzegovina',
+	'BWA' => 'Botswana',
+	'BRA' => 'Brazil',
+	'BRN' => 'Brunei',
+	'BFA' => 'Burkina Faso',
+	'BDI' => 'Burundi',
+	'BTN' => 'Butan',
+	'VUT' => 'Vanuatu',
+	'VEN' => 'Venezuela',
+	'VNM' => 'Vietnam',
+	'GAB' => 'Gabon',
+	'HTI' => 'Haiti',
+	'GUY' => 'Guyana',
+	'GMB' => 'Gambia',
+	'GHA' => 'Ghana',
+	'GLP' => 'Guadeloupe',
+	'GTM' => 'Guatemala',
+	'GNB' => 'Guinea Bisau',
+	'GIN' => 'Guinea',
+	'GIB' => 'Gibraltar',
+	'HND' => 'Honduras',
+	'GRD' => 'Grenada',
+	'GRL' => 'Greenland',
+	'GRC' => 'Greece',
+	'GUM' => 'Guam',
+	'DJI' => 'Djibouti',
+	'DMA' => 'Dominica',
+	'DOM' => 'Dominicana',
+	'EGY' => 'Egypt',
+	'ZMB' => 'Zambia',
+	'ZWE' => 'Zimbabwe',
+	'IND' => 'India',
+	'IDN' => 'Indonasia',
+	'JOR' => 'Jordan',
+	'IRN' => 'Iran',
+	'ISL' => 'Iceland',
+	'YMD' => 'Yemen',
+	'CYM' => 'Kayman isl.',
+	'KHM' => 'Cambodge',
+	'CMR' => 'Cameroon',
+	'QAT' => 'Katar',
+	'KEN' => 'Kenia',
+	'CYP' => 'Cyprus',
+	'COL' => 'Columbia',
+	'COG' => 'Congo',
+	'PRK' => 'North Korea',
+	'CRI' => 'Costa Rica',
+	'KWT' => 'Kuwait',
+	'LAO' => 'Laos',
+	'LSO' => 'Lesoto',
+	'LBR' => 'Liberia',
+	'LBN' => 'Livan',
+	'LBY' => 'Libia',
+	'LTU' => 'Litva',
+	'LIE' => 'Liechtenstein',
+	'LUX' => 'Luxembourg',
+	'MUS' => 'Mauritius ',
+	'MRT' => 'Mauritania',
+	'MDG' => 'Madagaskar',
+	'MAC' => 'Makao',
+	'MKD' => 'Macedonia',
+	'MYS' => 'Malasia',
+	'MLI' => 'Mali',
+	'MDV' => 'Maldivian isl.',
+	'MLT' => 'Malta',
+	'MAR' => 'Maroco',
+	'MHL' => 'Marshall Islands',
+	'MTQ' => 'Martinica',
+	'MOZ' => 'Mozambic',
+	'MDA' => 'Moldova',
+	'MCO' => 'Monaco',
+	'MNG' => 'Mongolia',
+	'MSR' => 'Montserrat',
+	'MMR' => 'Myanmar',
+	'NAM' => 'Namibia',
+	'NPN' => 'Nepal',
+	'NER' => 'Niger',
+	'NGA' => 'Nigeria',
+	'NLD' => 'Netherlands',
+	'NIC' => 'Nicaragua',
+	'NCL' => 'New Caledonia',
+	'ARE' => 'United Arab Emirates',
+	'OMN' => 'Oman',
+	'PAK' => 'Pakistan',
+	'PAN' => 'Panama',
+	'PNG' => 'Papua New Guinea',
+	'PRY' => 'Paragway',
+	'PER' => 'Peru',
+	'PRI' => 'Puerto Rico',
+	'RWA' => 'Ruanda',
+	'SLV' => 'Salvador',
+	'SAU' => 'Saudi Arabia',
+	'SWZ' => 'Swaziland',
+	'SYC' => 'Seychellois isl.',
+	'SEN' => 'Senegal',
+	'LCA' => 'Sent Lucia',
+	'SGP' => 'Singapore',
+	'SYR' => 'Syria',
+	'SVK' => 'Slovakia',
+	'SVN' => 'Slovenia',
+	'SLB' => 'Solomn isl.',
+	'SOM' => 'Somali',
+	'SDN' => 'Sudan',
+	'SUR' => 'Surinam',
+	'SLE' => 'Sierra Leone',
+	'TWN' => 'Taiwan',
+	'THA' => 'Tailand',
+	'TZA' => 'Tanzania',
+	'TGO' => 'Togo',
+	'TON' => 'Tonga',
+	'TTO' => 'Trinidad',
+	'TKM' => 'Turkmenistan',
+	'TUR' => 'Turkey',
+	'UGA' => 'Uganda',
+	'URY' => 'Uruguay',
+	'FJI' => 'Fiji',
+	'PHL' => 'Phillipines',
+	'FIN' => 'Finland',
+	'FLK' => 'Folkland isl.',
+	'HRV' => 'Croatia',
+	'TCD' => 'Chad',
+	'CHL' => 'Chile',
+	'LKA' => 'Sri Lanka',
+	'ECU' => 'Equador',
+	'GNQ' => 'Equatorial Guinea',
+	'ETH' => 'Efiopia',
+	'KOR' => 'South Korea',
+	'JAM' => 'Jamaica',
+	'ZAF' => 'Republic of South Africa',
+	'AFG' => 'Afganistan',
+	'CCK' => 'Cocos Islands',
+	'CAF' => 'Central Africa',
+	'ESH' => 'West Sahara',
+	'FSM' => 'Micronasia',
+	'GUF' => 'Guiana',
+	'IRQ' => 'Irak',
+	'PYF' => 'Polynesia',
+	'PLW' => 'Palau',
+	'SMR' => 'San Marino',
+	'TUN' => 'Tunisia',
+	'VAT' => 'Vatican',
+	'WSM' => 'Samoa',
+	'ZAR' => 'Zair',
+	'ANT' => 'Antilles',
+	'BOL' => 'Bolivia',
+	'BRA' => 'Brazil',
+	'CYM' => 'Kayman isl.',
+	'LBN' => 'Lybia'
+  );
+}
+
+function giftoflife_donate_currencies() {
+  return array(
+    'RUB' => t('Russian Ruble'),
+    'USD' => t('U.S. Dollar'),
+    'EUR' => t('Euro'),
+    'UAH' => t('Grivna'),
+    'BYR' => t('Belarusian Ruble'),
+    'UZS' => t('Uzbekistani Som'),
+  );
+}
+
+function giftoflife_donate_systems() {
+  return array(
+    '1' => 'WebMoney WMZ',
+	'2' => 'WebMoney WMR',
+	'3' => 'WebMoney WME',
+	'4' => 'WebMoney WMB',
+	'5' => 'WebMoney WMU',
+	'6' => 'WebMoney WMY',
+	'7' => 'Яндекс.Деньги',
+	'9' => 'RBK Money',
+	'10' => 'Карты Webmoney',
+	'12' => 'Карты ДеньгиOnline',
+	'13' => 'MoneyMail',
+	'14' => 'QIWI Кошелек',
+	'15' => 'WebCreds',
+	'16' => 'EasyPay',
+	'20' => 'Platezh.Ru',
+	'30' => 'IntellectMoney',
+	'32' => 'Деньги@Mail.Ru',
+	'39' => 'Мобильный Платеж Мегафон',
+	'40' => 'LiqPay',
+	'43' => 'Дом.ru',
+	'44' => 'ТВТ',
+	'45' => 'Мобильный Платеж Билайн',
+	'46' => 'Альфа-Банк',
+	'48' => 'ВТБ24',
+	'49' => 'PayPal',
+	'50' => 'Мобильный Платеж МТС',
+	'51' => 'Банковские карты США/Европа',
+	'53' => 'Банковские карты M2',
+	'54' => 'Рапида',
+	'57' => 'Банковские карты',
+	'58' => 'Liberty Reserve',
+	'59' => 'ВКонтакте',
+	'61' => 'Промсвязьбанк',
+	'62' => 'Евросеть',
+	'63' => 'Банковские карты M100',
+	'64' => 'Элекснет',
+	'65' => 'Ukash',
+	'66' => 'Куппи',
+	'73' => 'Yota.money',
+	'74' => 'TeleMoney',
+	'75' => 'CONTACT',
+	'77' => 'WebMoney Check WMR',
+	'78' => 'WebMoney Check WMU',
+	'80' => 'W1 - Единый кошелёк',
+	'85' => 'Банковские карты M300',
+  );
+}
+
+function giftoflife_donate_menu() {
+	$items['admin/settings/giftoflife_donate'] = array(
+      'title'              => 'GOL Donate settings',
+      'description'        => 'Settings for giftoflife_donates.',
+      'page callback'      => 'drupal_get_form',
+      'page arguments' 	   => array('giftoflife_donate_admin_settings'),
+	  'access callback'    => 'user_access',
+	  'access arguments'   => array('administer giftoflife_donate'),
+	  'file'			   => 'admin.inc',
+    );
+    $items['admin/settings/giftoflife_donate/main'] = array(
+      'title'              => 'GOL Donate settings',
+      'description'        => 'Settings for giftoflife_donates.',
+      'page callback'      => 'drupal_get_form',
+      'page arguments' 	   => array('giftoflife_donate_admin_settings'),
+	  'access callback'    => 'user_access',
+	  'access arguments'   => array('administer giftoflife_donate'),
+	  'file'			   => 'admin.inc',
+	  'type'			   => MENU_DEFAULT_LOCAL_TASK,
+    );
+    $items['admin/settings/giftoflife_donate/dengionline'] = array(
+      'title'              => 'Dengionline donate',
+      'description'        => 'Settings for Dengionline donate.',
+      'page callback'      => 'drupal_get_form',
+      'page arguments' 	   => array('giftoflife_donate_dengionline_admin_settings'),
+	  'access callback'    => 'user_access',
+	  'access arguments'   => array('administer giftoflife_donate'),
+	  'file'			   => 'admin.inc',
+	  'type' 			   => MENU_LOCAL_TASK,
+    );
+    $items['admin/settings/giftoflife_donate/yandexmoney'] = array(
+      'title'              => 'Yandex Money donate',
+      'description'        => 'Settings for Yandex Money donate.',
+      'page callback'      => 'drupal_get_form',
+      'page arguments' 	   => array('giftoflife_donate_yandexmoney_admin_settings'),
+	  'access callback'    => 'user_access',
+	  'access arguments'   => array('administer giftoflife_donate'),
+	  'file'			   => 'admin.inc',
+	  'type' 			   => MENU_LOCAL_TASK,
+    );
+    $items['admin/settings/giftoflife_donate/rbkmoney'] = array(
+      'title'              => 'RBK Money donate',
+      'description'        => 'Settings for RBK Money donate.',
+      'page callback'      => 'drupal_get_form',
+      'page arguments' 	   => array('giftoflife_donate_rbkmoney_admin_settings'),
+	  'access callback'    => 'user_access',
+	  'access arguments'   => array('administer giftoflife_donate'),
+	  'file'			   => 'admin.inc',
+	  'type' 			   => MENU_LOCAL_TASK,
+    );
+    $items['donate/dengionline'] = array(
+      'title'              => t('Dengionline transfer'),
+      'page callback'      => 'drupal_get_form',
+      'page arguments' 	   => array('giftoflife_donate_dengionline_form'),
+      'type'               => MENU_NORMAL_ITEM,
+      'access callback'    => TRUE,
+    );
+    $items['donate/yandexmoney'] = array(
+      'title'              => t('Yandex Money transfer'),
+      'page callback'      => 'drupal_get_form',
+      'page arguments' 	   => array('giftoflife_donate_yandexmoney_form'),
+      'type'               => MENU_NORMAL_ITEM,
+      'access callback'    => TRUE,
+    );
+    $items['donate/rbkmoney'] = array(
+      'title'              => t('RBK Money transfer'),
+      'page callback'      => 'drupal_get_form',
+      'page arguments' 	   => array('giftoflife_donate_rbkmoney_form'),
+      'type'               => MENU_NORMAL_ITEM,
+      'access callback'    => TRUE,
+    );
+    $items['donate/thanks'] = array(
+      'title'              => t('Thank you'),
+      'page callback'      => 'drupal_get_form',
+      'page arguments' 	   => array('giftoflife_donate_thanks'),
+	  'type'			   => MENU_NORMAL_ITEM,
+	  'access callback'    => TRUE,
+    );
+    $items['donate/error'] = array(
+      'title'              => t('Error'),
+      'page callback'      => 'drupal_get_form',
+      'page arguments' 	   => array('giftoflife_donate_error'),
+	  'type'			   => MENU_NORMAL_ITEM,
+	  'access callback'    => TRUE,
+    );
+  return $items;
+}
+ 
+
+/**
+ * Implementation of hook_perm().
+ */
+function giftoflife_donate_perm() {
+  return array('administer giftoflife_donate');
+}
+function giftoflife_donate_dengionline_form() {
+  //$urls = giftoflife_donate_urls();
+  $url = variable_get('giftoflife_donate_dengionline_url','');
+  $form['#action'] = $url;
+  $form['header'] = array(
+    '#value'  => variable_get('giftoflife_donate_dengionline_header',''),
+    '#weight' => '-1'
+  );
+  $form['nickname'] = array(
+    '#required' => '1',
+    '#size' => '20',
+    '#weight' => '0',
+    '#type' => 'textfield',
+    '#title' => 'Фамилия',
+  );
+  $form['name'] = array(
+    '#weight' => '1',
+    '#required' => '1',
+    '#size' => '20',
+    '#type' => 'textfield',
+    '#title' => 'Имя',
+  );
+  $form['patronymic'] = array(
+    '#required' => '1',
+    '#size' => '20',
+    '#weight' => '2',
+    '#type' => 'textfield',
+    '#title' => 'Отчество',
+  );
+  $form['email'] = array(
+    '#required' => '1',
+    '#size' => '20',
+    '#weight' => '3',
+    '#type' => 'textfield',
+    '#title' => 'E-mail',
+  );
+  $form['amount'] = array(
+    '#required' => '1',
+    '#size' => '20',
+    '#weight' => '4',
+    '#title' => 'Сумма',
+    '#type' => 'textfield',
+  );
+  $form['paymentCurrency'] = array(
+    '#title'       => t('Currency'),
+    '#type'        => 'select',
+    '#weight'	   => '5',
+    '#name'        => 'recipientCurrency',
+    '#options'     => giftoflife_donate_currencies(),
+    '#description' => t('We accept donates in these currencies.'),
+  );
+  $form['comment'] = array(
+    '#rows' => '2',
+    '#cols' => '20',
+    '#weight' => '7',
+    '#type' => 'textarea',
+    '#title' => 'Комментарий к пожертвованию',
+  );
+  $form['project'] = array(
+    '#type'  => 'hidden',
+    '#name'  => 'project',
+    '#value' => variable_get('giftoflife_donate_dengionline_id',''),
+  );
+  $form['mode_type'] = array(
+    '#title'       => t('Payment system'),
+    '#type'        => 'select',
+    '#weight' 	   => '6',
+    '#name'        => 'mode_type',
+    '#options'     => giftoflife_donate_systems(),
+    '#description' => t('We accept donates by these systems, please select one.'),
+  );  
+  $form['return'] = array(
+    '#type'  => 'hidden',
+    '#value' => url(variable_get('giftoflife_donate_dengionline_complete_url',''), array('query' => NULL, 'fragment' => NULL)),
+    '#name'  => 'return',
+  );
+  $form['submit'] = array(
+    '#type'  => 'submit',
+    '#value' => t('Donate'),
+    '#name'  => 'submit',
+    '#weight' => '50',
+  );
+  $form['footer'] = array(
+    '#value'  => variable_get('giftoflife_donate_dengionline_footer',''),
+    '#weight' => '8',
+  );
+  return $form;
+}
+
+function giftoflife_donate_yandexmoney_form () {
+  $url = variable_get('giftoflife_donate_yandexmoney_url','');
+  $form['#action'] = $url;
+  $form['header'] = array(
+    '#value'  => variable_get('giftoflife_donate_yandexmoney_header',''),
+    '#weight' => '-1'
+  );
+  $form['surname'] = array(
+    '#required' => '1',
+    '#size' => '20',
+    '#weight' => '0',
+    '#type' => 'textfield',
+    '#title' => 'Фамилия',
+  );
+  $form['name'] = array(
+    '#weight' => '1',
+    '#required' => '1',
+    '#size' => '20',
+    '#type' => 'textfield',
+    '#title' => 'Имя',
+  );
+  $form['patronymic'] = array(
+    '#required' => '1',
+    '#size' => '20',
+    '#weight' => '2',
+    '#type' => 'textfield',
+    '#title' => 'Отчество',
+  );
+  $form['email'] = array(
+    '#required' => '1',
+    '#size' => '20',
+    '#weight' => '3',
+    '#type' => 'textfield',
+    '#title' => 'E-mail',
+  );
+  $form['amount'] = array(
+    '#required' => '1',
+    '#size' => '20',
+    '#weight' => '4',
+    '#title' => 'Сумма',
+    '#type' => 'textfield',
+  );
+  $form['paymentCurrency'] = array(
+    '#title'       => t('Currency'),
+    '#type'        => 'select',
+    '#weight'	   => '5',
+    '#name'        => 'recipientCurrency',
+    '#options'     => giftoflife_donate_currencies(),
+    '#description' => t('We accept donates in these currencies.'),
+  );
+  $form['comment'] = array(
+    '#rows' => '2',
+    '#cols' => '20',
+    '#weight' => '7',
+    '#type' => 'textarea',
+    '#title' => 'Комментарий к пожертвованию',
+  );
+  $form['ShopID'] = array(
+    '#type'  => 'hidden',
+    '#name'  => 'shopid',
+    '#value' => variable_get('giftoflife_donate_yandexmoney_shopid',''),
+  ); 
+  $form['scid'] = array(
+    '#type'  => 'hidden',
+    '#name'  => 'scid',
+    '#value' => variable_get('giftoflife_donate_yandexmoney_scid',''),
+  );
+  $form['return'] = array(
+    '#type'  => 'hidden',
+    '#value' => url(variable_get('giftoflife_donate_yandexmoney_complete_url',''), array('query' => NULL, 'fragment' => NULL)),
+    '#name'  => 'return',
+  );
+  $form['submit'] = array(
+    '#type'  => 'submit',
+    '#value' => t('Donate'),
+    '#name'  => 'submit',
+    '#weight' => '50',
+  );
+  $form['footer'] = array(
+    '#value'  => variable_get('giftoflife_donate_yandexmoney_footer',''),
+    '#weight' => '8',
+  );
+  return $form;
+}
+
+function giftoflife_donate_rbkmoney_form () {
+  $url = variable_get('giftoflife_donate_rbkmoney_url','');
+  $form['#action'] = $url;
+  $form['header'] = array(
+    '#value'  => variable_get('giftoflife_donate_rbkmoney_header',''),
+    '#weight' => '-1'
+  );
+  $form['surname'] = array(
+    '#required' => '1',
+    '#size' => '20',
+    '#weight' => '0',
+    '#type' => 'textfield',
+    '#title' => 'Фамилия',
+  );
+  $form['name'] = array(
+    '#weight' => '1',
+    '#required' => '1',
+    '#size' => '20',
+    '#type' => 'textfield',
+    '#title' => 'Имя',
+  );
+  $form['patronymic'] = array(
+    '#required' => '1',
+    '#size' => '20',
+    '#weight' => '2',
+    '#type' => 'textfield',
+    '#title' => 'Отчество',
+  );
+  $form['email'] = array(
+    '#required' => '1',
+    '#size' => '20',
+    '#weight' => '3',
+    '#type' => 'textfield',
+    '#title' => 'E-mail',
+  );
+  $form['recipientAmount'] = array(
+    '#required' => '1',
+    '#size' => '20',
+    '#weight' => '4',
+    '#title' => 'Сумма',
+    '#type' => 'textfield',
+  );
+  $form['paymentCurrency'] = array(
+    '#title'       => t('Currency'),
+    '#type'        => 'select',
+    '#weight'	   => '5',
+    '#name'        => 'recipientCurrency',
+    '#options'     => giftoflife_donate_currencies(),
+    '#description' => t('We accept donates in these currencies.'),
+  );
+  $form['comment'] = array(
+    '#rows' => '2',
+    '#cols' => '20',
+    '#weight' => '7',
+    '#type' => 'textarea',
+    '#title' => 'Комментарий к пожертвованию',
+  );
+  $form['eshopID'] = array(
+    '#type'  => 'hidden',
+    '#name'  => 'eshopid',
+    '#value' => variable_get('giftoflife_donate_rbkmoney_eshopid',''),
+  ); 
+  $form['successUrl'] = array(
+    '#type'  => 'hidden',
+    '#value' => url(variable_get('giftoflife_donate_rbkmoney_complete_url',''), array('query' => NULL, 'fragment' => NULL)),
+    '#name'  => 'return',
+  );
+  $form['failUrl'] = array(
+    '#type'  => 'hidden',
+    '#value' => url(variable_get('giftoflife_donate_rbkmoney_complete_url',''), array('query' => NULL, 'fragment' => NULL)),
+    '#name'  => 'return',
+  );
+  $form['submit'] = array(
+    '#type'  => 'submit',
+    '#value' => t('Donate'),
+    '#name'  => 'submit',
+    '#weight' => '50',
+  );
+  $form['footer'] = array(
+    '#value'  => variable_get('giftoflife_donate_rbkmoney_footer',''),
+    '#weight' => '8',
+  );
+  return $form;
+}
+
+function giftoflife_donate_thanks() {
+  $form['thanks'] = array(
+    '#value' => variable_get('giftoflife_donate_thanks', '<p>Thank you for your giftoflife_donate.</p>'),
+  );
+  return $form;
+}
+
+function giftoflife_donate_error() {
+  $form['error'] = array(
+    '#value' => variable_get('giftoflife_donate_error', '<p>Some kind of error.</p>'),
+  );
+  return $form;
+}
+?>
