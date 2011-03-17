@@ -437,6 +437,7 @@ function giftoflife_donate_dengionline_form() {
     '#weight' 	   => '6',
     '#name'        => 'mode_type',
     '#options'     => giftoflife_donate_systems(),
+    '#default_value' => t('Select payment system'),
     '#description' => t('We accept donates by these systems, please select one.'),
   );  
   $form['return'] = array(
