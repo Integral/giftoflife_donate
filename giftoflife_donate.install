@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * Implementation of hook_uninstall().
+ *
+ * Remove the variables corresponding to the giftoflife_donate module.
+ */
+
+function giftoflife_donate_uninstall() {
+  // Delete the variables we created.
+  // General settings.
+  variable_del('giftoflife_donate_dengionline_complete_url');
+  variable_del('giftoflife_donate_dengionline_footer');
+  variable_del('giftoflife_donate_dengionline_header');
+  variable_del('giftoflife_donate_dengionline_id');
+  variable_del('giftoflife_donate_dengionline_url');
+  variable_del('giftoflife_donate_error');
+  variable_del('giftoflife_donate_rbkmoney_complete_url');
+  variable_del('giftoflife_donate_rbkmoney_eshopid');
+  variable_del('giftoflife_donate_rbkmoney_footer');
+  variable_del('giftoflife_donate_rbkmoney_header');
+  variable_del('giftoflife_donate_rbkmoney_url');
+  variable_del('giftoflife_donate_thanks');
+  variable_del('giftoflife_donate_yandexmoney_complete_url');
+  variable_del('giftoflife_donate_yandexmoney_footer');
+  variable_del('giftoflife_donate_yandexmoney_header');
+  variable_del('giftoflife_donate_yandexmoney_scid');
+  variable_del('giftoflife_donate_yandexmoney_shopid');
+  variable_del('giftoflife_donate_yandexmoney_url');
+
+  // Clear the cache tables.
+  cache_clear_all('*', 'cache', TRUE);
+  cache_clear_all('*', 'cache_filter', TRUE);
+  cache_clear_all('*', 'cache_menu', TRUE);
+  cache_clear_all('*', 'cache_page', TRUE);
+}
